@@ -6,7 +6,6 @@ The following is theformat:
 ```
 find [-H] [-L] [-P] [-D debugopts] [-Olevel] [starting-point...] [expression]
 ```
----
 ## Examples
 find / -user jithu  -Find all files owned by user jithu
 find / -size +5M /etc/	-Find all files more than 5MB in /etc directory
@@ -23,7 +22,7 @@ find /home/randomuser/ -name "*jpg" -mtime 4
 find . -type f -exec grep "forinstance" '{}' \; -print
 find . -type f -print | xargs grep "forinstance"
 find . -name "rc.conf" -exec chmod o+r '{}' \;
-
+---
 # grep 
 
 grep, egrep, fgrep, rgrep - print lines that match patterns
@@ -38,15 +37,15 @@ grep [OPTION...] -f PATTERN_FILE ... [FILE...]
 `grep ^squid /usr/share/dict/words`  -Searching words starting with squid
 `grep cat$ /usr/share/dict/words`  -Searching words ending with cat
 `grep squid /usr/share/dict/words  > /etc/list.txt`  -Find the word squid from /usr/share/dict/words and redirect it to /etc/words file
-
+---
 # Tar
 tar is an archiving utility,
 Types of  Archiving and the extentions
 
-| Field | Allowed Values | Description |
+|NO | Type | command |
 |---|---|---|
 | 1 | gzip | tar cfz |
-| 2 | bzip2	| tar cfj |
+| 2 | bzip2 | tar cfj |
 | 3 | xz | tar cfJ |
 
 ## Examples
