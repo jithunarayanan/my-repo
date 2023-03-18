@@ -1,4 +1,4 @@
-# Find 
+## find 
 find - search for files in a directory hierarchy
 
 The following is theformat:
@@ -6,7 +6,7 @@ The following is theformat:
 ```
 find [-H] [-L] [-P] [-D debugopts] [-Olevel] [starting-point...] [expression]
 ```
-## Examples
+## examples
 
 `find / -user jithu` Find all files owned by user jithu
 
@@ -16,7 +16,7 @@ find [-H] [-L] [-P] [-D debugopts] [-Olevel] [starting-point...] [expression]
 
 `find . -name thisfile.txt` -Find file named thisfile.txt from present working directory
 
-## More
+## more
 
 `find -O3 -L /var/www/ -name "*.html"`
 
@@ -38,7 +38,7 @@ find [-H] [-L] [-P] [-D debugopts] [-Olevel] [starting-point...] [expression]
 
 ---
 
-# grep 
+## grep 
 
 grep, egrep, fgrep, rgrep - print lines that match patterns
 
@@ -48,7 +48,7 @@ grep [OPTION...] -e PATTERNS ... [FILE...]
 grep [OPTION...] -f PATTERN_FILE ... [FILE...]
 ```
 
-## Examples
+## examples
 `grep ^squid /usr/share/dict/words`  -Searching words starting with squid
 
 `grep cat$ /usr/share/dict/words`  -Searching words ending with cat
@@ -57,7 +57,7 @@ grep [OPTION...] -f PATTERN_FILE ... [FILE...]
 
 ---
 
-# Tar
+## Tar
 tar is an archiving utility,
 Types of  Archiving and the extentions
 
@@ -67,7 +67,7 @@ Types of  Archiving and the extentions
 | 2 | bzip2 | tar cfj |
 | 3 | xz | tar cfJ |
 
-## Examples
+## examples
 
 `tar xfz /root/archives/fstab.gzip /etc/fstab`  -archiving /etc/fstab to /root/archives/ directory with gzip
 
