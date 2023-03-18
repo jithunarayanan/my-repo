@@ -38,7 +38,7 @@ Additionally you can also use the following special characters to build more adv
 ---
 ## Examples
 
-`0 * * * * *` - Executes every minute
+`0 * * * * *` - Executes every minute 
 `0 0 * * * *` - Executes every hour
 `0 0 0 * * *` - Executes every day
 `0 0 0 0 * *` - Executes every month
