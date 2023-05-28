@@ -57,7 +57,7 @@ grep [OPTION...] -f PATTERN_FILE ... [FILE...]
 
 ---
 
-## Tar
+## tar
 tar is an archiving utility,
 Types of  Archiving and the extentions
 
@@ -69,9 +69,9 @@ Types of  Archiving and the extentions
 
 ## examples
 
-`tar xfz /root/archives/fstab.gzip /etc/fstab`  -archiving /etc/fstab to /root/archives/ directory with gzip
+`tar cfz /root/archives/fstab.gzip /etc/fstab`  -archiving /etc/fstab to /root/archives/ directory with gzip
 
-`tar xfj /root/archives/fstab.bzip2 /etc/fstab` -archiving /etc/fstab to /root/archives/ directory with bzip
+`tar cfj /root/archives/fstab.bzip2 /etc/fstab` -archiving /etc/fstab to /root/archives/ directory with bzip
 
-`tar xfJ /root/archives/fstab.xz /etc/fstab`    -archiving /etc/fstab to /root/archives/ directory with xz
+`tar cfJ /root/archives/fstab.xz /etc/fstab`    -archiving /etc/fstab to /root/archives/ directory with xz
 
