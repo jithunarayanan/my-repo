@@ -1,4 +1,4 @@
-# LAN CAble Configuration and POE switch Connection.
+# LAN CAble Configuration and POE switch Connection
 **Purpose:**
 
 Purpose of this document is to know about the Ethernet cable connction and PoE injection.

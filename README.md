@@ -5,4 +5,4 @@ This is my personal knowledge-base. Here you will find bash scripts, technical d
 2. [Git](git.md)
 3. [RAID](RAID1,10.md)
 4. [Linux Commands tar, find and grep](tar-find-grep.md)
-5. [Litlebit about ethernet cables and PoE](poe.md)
+5. [LAN CAble Configuration and POE switch Connection](poe.md)
