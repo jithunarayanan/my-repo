@@ -1,5 +1,5 @@
-### Resizing an ext3 file system
-As a system administrator, you can resize an ext3 file system using the resize2fs utility. The resize2fs 
+### Resizing an ext3/ext4 file system
+As a system administrator, you can resize an ext3/ext4 file systems using the `resize2fs` utility. The `resize2fs` 
 utility reads the size in units of file system block size, unless a suffix indicating a specific unit is used. 
 The following suffixes indicate specific units:
 
@@ -11,12 +11,12 @@ The following suffixes indicate specific units:
 
 **Prerequisites**
 
-- An ext3 file system. For information about creating an ext3 file system.
+- An ext3/ext4 file system.
 - An underlying block device of an appropriate size to hold the file system after resizing.
 
 **Procedure**
 
-To resize an ext3 file system, take the following steps:
+To resize an ext3/ext4 file system, take the following steps:
 
 - To shrink and grow the size of an unmounted ext3 file system:
 ```
@@ -28,7 +28,7 @@ Replace */dev/block_device* with the path to the block device, for example ```/d
 
 Replace size with the required resize value using `s`,` K`, `M`, `G,` and` T` suffixes.
 
-An ext3 file system may be grown while mounted using the `resize2fs` command:
+An ext3/ext4 file system may be grown while mounted using the `resize2fs` command:
 ```
 # resize2fs /mount/device size
 ```
