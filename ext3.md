@@ -1,3 +1,57 @@
+### Creating an ext3/ext4 file system
+As a system administrator, you can create an ext3 file system on a block device using `mkfs.ext3`/`mkfs.ext4` command.
+
+**Prerequisites**
+- A partition on your disk. For information about creating MBR or GPT partitions, see Creating a partition table on a disk with parted.
+
+**Procedure**
+
+To create an ext3 file system:
+
+For a regular-partition device, an LVM volume, an MD volume, or a similar device, use the following command:
+```
+# mkfs.ext3 /dev/block_device
+```
+Replace `/dev/block_device` with the path to a block device.
+
+For example, `/dev/sdb1`, `/dev/disk/by-uuid/05e99ec8-def1-4a5e-8a9d-5945339ceb2a`, or `/dev/my-volgroup/my-lv`. 
+In general, the default options are optimal for most usage scenarios.
+
+For striped block devices (for example, RAID5 arrays), the stripe geometry can be specified at the time of file 
+system creation. Using proper stripe geometry enhances the performance of an ext3 file system. For example, 
+to create a file system with a 64k stride (that is, 16 x 4096) on a 4k-block file system, use the following command:
+```
+# mkfs.ext3 -E stride=16,stripe-width=64 /dev/block_device
+```
+In the given example:
+
+- stride=value: Specifies the RAID chunk size
+- stripe-width=value: Specifies the number of data disks in a RAID device, or the number of stripe units in the stripe.
+
+>**Note:**
+To specify a UUID when creating a file system:
+```
+# mkfs.ext3 -U UUID /dev/block_device
+# mkfs.ext4 -U UUID /dev/block_device
+```
+Replace UUID with the UUID you want to set: for example, `7cd65de3-e0be-41d9-b66d-96d749c02da7`.
+
+Replace `/dev/block_device` with the path to an ext3/ext4 file system to have the UUID added to it: for example, `/dev/sda8`.
+
+To specify a label when creating a file system:
+```
+# mkfs.ext3 -L label-name /dev/block_device
+```
+To view the created ext3/ext4 file system:
+```
+# blkid
+```
+ADDITIONAL RESOURCES
+```
+ext3/ext4 man page.
+mkfs.ext3/mkfs.ext4 man page.
+```
+
 ### Resizing an ext3/ext4 file system
 As a system administrator, you can resize an ext3/ext4 file systems using the `resize2fs` utility. The `resize2fs` 
 utility reads the size in units of file system block size, unless a suffix indicating a specific unit is used. 
