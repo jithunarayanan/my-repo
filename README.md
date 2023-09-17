@@ -6,3 +6,5 @@ This is my personal knowledge-base. Here you will find bash scripts, technical d
 3. [RAID](RAID1,10.md)
 4. [Linux Commands tar, find and grep](tar-find-grep.md)
 5. [LAN CAble Configuration and POE switch Connection](poe.md)
+6. [Software RAID](RAID.md)
+
