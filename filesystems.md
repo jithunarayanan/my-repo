@@ -1,11 +1,15 @@
-### Creating an XFS file system with mkfs.xfs
+# Creating an XFS file system with mkfs.xfs
 This procedure describes how to create an XFS file system on a block device.
+
+
+## XFS Filesystem
 
 **Procedure**
 
 To create the file system:
 
 If the device is a regular partition, an LVM volume, an MD volume, a disk, or a similar device, use the following command:
+
 ```
 # mkfs.xfs *block-device*
 ```
@@ -74,7 +78,8 @@ ADDITIONAL RESOURCES
 ```
 xfs_growfs(8) man page.
 ```
-### Creating an ext3/ext4 file system
+
+# Creating an ext3/ext4 file system
 As a system administrator, you can create an ext3 file system on a block device using `mkfs.ext3`/`mkfs.ext4` command.
 
 **Prerequisites**
