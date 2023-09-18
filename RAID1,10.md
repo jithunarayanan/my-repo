@@ -1,4 +1,4 @@
-**Raid 0+1 vs Raid 1+0 (Probability of Failure)**
+# Raid 0+1 vs Raid 1+0 (Probability of Failure)
 
 Here's a little bit of math that should show the differences in rates of failure. For simplicity, let's assume there is an even number of disks.
 
