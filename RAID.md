@@ -1,4 +1,4 @@
-### Creating a software RAID during the installation
+# Creating a software RAID during the installation
 
 Redundant Arrays of Independent Disks (RAID) devices are constructed
 from multiple storage devices that are arranged to provide increased
