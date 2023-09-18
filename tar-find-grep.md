@@ -1,3 +1,5 @@
+# Linux Commands
+
 ## find 
 find - search for files in a directory hierarchy
 
@@ -74,4 +76,6 @@ Types of  Archiving and the extentions
 `tar cfj /root/archives/fstab.bzip2 /etc/fstab` -archiving /etc/fstab to /root/archives/ directory with bzip
 
 `tar cfJ /root/archives/fstab.xz /etc/fstab`    -archiving /etc/fstab to /root/archives/ directory with xz
+
+---
 
