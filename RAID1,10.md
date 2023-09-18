@@ -135,5 +135,5 @@ One final table (Please note that I am rounding the values to integers.)
                   | 128 | 50% | 0%  |
                   -------------------
 
-**Conclusion:** 
+**Conclusion:**
 <br>Use Raid 1+0.
