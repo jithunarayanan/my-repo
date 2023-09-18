@@ -107,7 +107,7 @@ Now the most useful and interesting part of the math. We can take the limits of 
 
 Lim n->inf P1 = Lim n->inf n / (2 * (n - 1))     // We can use L'Hopital's rule
 
-               = Lim n->inf 1 / 2 = 1 / 2
+    = Lim n->inf 1 / 2 = 1 / 2
 In other words, there will always be at least a 50% chance of failure if 2 disks die on a Raid 0+1 configuration!
 
 
