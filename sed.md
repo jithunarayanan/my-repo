@@ -3,6 +3,7 @@ SED command in UNIX stands for stream editor and it can perform lots of function
 
 SED is a powerful text stream editor. Can do insertion, deletion, search and replace(substitution).
 SED command in unix supports regular expression which allows it perform complex pattern matching.
+
 **Syntax:**
 ```
 sed OPTIONS... [SCRIPT] [INPUTFILE...] 
@@ -18,10 +19,10 @@ unix linux which one you choose.
 unix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
 ```
 
-
 Replacing or substituting string : Sed command is mostly used to replace the text in a file. The below simple sed command replaces the word “unix” with “linux” in the file.
 
 `$sed 's/unix/linux/' geekfile.txt`
+
 Output :
 ```
 linux is great os. unix is opensource. unix is free os.
@@ -36,6 +37,7 @@ By default, the sed command replaces the first occurrence of the pattern in each
 Replacing the nth occurrence of a pattern in a line : Use the /1, /2 etc flags to replace the first, second occurrence of a pattern in a line. The below command replaces the second occurrence of the word “unix” with “linux” in a line.
 
 `$sed 's/unix/linux/2' geekfile.txt`
+
 Output:
 ```
 unix is great os. linux is opensource. unix is free os.
@@ -47,6 +49,7 @@ Replacing all the occurrence of the pattern in a line : The substitute flag /g (
 ```
 `$sed 's/unix/linux/g' geekfile.txt`
 ```
+
 **Output :**
 ```
 linux is great os. linux is opensource. linux is free os.
@@ -95,6 +98,7 @@ Duplicating the replaced line with /p flag : The /p print flag prints the replac
 ```
 $sed 's/unix/linux/p' geekfile.txt
 ```
+
 **Output:**
 
 ```
@@ -110,6 +114,7 @@ Printing only the replaced lines : Use the -n option along with the /p print fla
 ```
 $sed -n 's/unix/linux/p' geekfile.txt
 ```
+
 **Output:**
 ```
 linux is great os. unix is opensource. unix is free os.
@@ -117,10 +122,12 @@ linux linux which one you choose.
 linux is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
 If you use -n alone without /p, then the sed does not print anything.
 ```
+
 Replacing string on a range of lines : You can specify a range of line numbers to the sed command for replacing a string.
 ```
 $sed '1,3 s/unix/linux/' geekfile.txt
 ```
+
 **Output:**
 ```
 linux is great os. unix is opensource. unix is free os.
@@ -132,6 +139,7 @@ Here the sed command replaces the lines with range from 1 to 3. Another example 
 ```
 $sed '2,$ s/unix/linux/' geekfile.txt
 ```
+
 **Output:**
 ```
 unix is great os. unix is opensource. unix is free os.
