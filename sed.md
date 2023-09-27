@@ -42,9 +42,11 @@ unix is great os. linux is opensource. unix is free os.
 learn operating system.
 unix linux which one you choose.
 unix is easy to learn.linux is a multiuser os.Learn unix .unix is a powerful.
+```
 Replacing all the occurrence of the pattern in a line : The substitute flag /g (global replacement) specifies the sed command to replace all the occurrences of the string in the line.
 ```
 `$sed 's/unix/linux/g' geekfile.txt`
+```
 **Output :**
 ```
 linux is great os. linux is opensource. linux is free os.
