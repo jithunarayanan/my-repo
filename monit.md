@@ -1,4 +1,4 @@
-# Monit Monitoring Solution for Nginx
+# Monit Monitoring Solution
 Monit is a powerful open-source utility that allows you to monitor and manage various processes and services on your server. In this guide, we’ll walk through the installation of Monit on Ubuntu and demonstrate how to configure it to monitor an Nginx web server.
 
 **Installation**
