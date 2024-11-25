@@ -7,4 +7,4 @@ This is my personal knowledge-base. Here you will find bash scripts, technical d
 4. [Linux Commands tar, find and grep](tar-find-grep.md)
 5. [LAN CAble Configuration and POE switch Connection](poe.md)
 6. [Software RAID](RAID.md)
-
+7. [Managing private ec2 instances Using Ansible](manage/README.md)

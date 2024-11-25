@@ -1,0 +1,12 @@
+Host control
+  hostname 52.24.198.125
+  user ubuntu
+  port 22
+  identityfile /Users/jithunarayanan/.ssh/id_rsa
+
+Host node1
+  hostname 10.10.2.11  
+  user ubuntu
+  port 22
+  identityfile /Users/jithunarayanan/.ssh/id_rsa
+  ProxyCommand ssh bastion -W %h:%p
