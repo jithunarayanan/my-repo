@@ -1,4 +1,5 @@
 # Managing private ec2 instances Using Ansible
+![image](screenshots/ansible.jpeg)
 ### Purpose:
 The purpose of this document is to help you to manage private ec2 instances using Ansible. This document provides a step-by-step guide to manage private EC2 instances using Ansible through a bastion host.
 
